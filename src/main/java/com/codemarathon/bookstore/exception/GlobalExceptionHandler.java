@@ -46,7 +46,7 @@ public class GlobalExceptionHandler {
 
     @ResponseStatus(HttpStatus.NOT_FOUND)
     @ExceptionHandler(BookNotFoundException.class)
-    public ResponseEntity<ApiResponse> handleCustomerNotFoundException(BookNotFoundException ex) {
+    public ResponseEntity<ApiResponse> handleBookNotFoundException(BookNotFoundException ex) {
         return new ResponseEntity<>(new ApiResponse(GeneralResponseEnum.FAILED.getCode(),
                 ex.getMessage(),
                 GeneralResponseEnum.FAILED.getMessage()), HttpStatus.NOT_FOUND);
@@ -54,7 +54,15 @@ public class GlobalExceptionHandler {
 
     @ResponseStatus(HttpStatus.NOT_FOUND)
     @ExceptionHandler(BooKAlreadyExistException.class)
-    public ResponseEntity<ApiResponse> handleCustomerNotFoundException(BooKAlreadyExistException ex) {
+    public ResponseEntity<ApiResponse> handleBooKAlreadyExistException(BooKAlreadyExistException ex) {
+        return new ResponseEntity<>(new ApiResponse(GeneralResponseEnum.FAILED.getCode(),
+                ex.getMessage(),
+                GeneralResponseEnum.FAILED.getMessage()), HttpStatus.NOT_FOUND);
+    }
+
+    @ResponseStatus(HttpStatus.NOT_FOUND)
+    @ExceptionHandler(UsersNotFoundException.class)
+    public ResponseEntity<ApiResponse> handleCustomerNotFoundException(UsersNotFoundException ex) {
         return new ResponseEntity<>(new ApiResponse(GeneralResponseEnum.FAILED.getCode(),
                 ex.getMessage(),
                 GeneralResponseEnum.FAILED.getMessage()), HttpStatus.NOT_FOUND);

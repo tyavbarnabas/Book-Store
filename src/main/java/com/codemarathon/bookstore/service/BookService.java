@@ -3,7 +3,6 @@ package com.codemarathon.bookstore.service;
 import com.codemarathon.bookstore.dto.ApiResponse;
 import com.codemarathon.bookstore.dto.BookRequest;
 
-import java.util.List;
 
 public interface BookService {
 

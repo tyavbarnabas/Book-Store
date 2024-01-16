@@ -16,6 +16,7 @@ import java.time.LocalDateTime;
 @AllArgsConstructor
 @NoArgsConstructor
 @Getter
+@Builder
 @Setter
 @ToString
 @Table(name = "book")
@@ -43,6 +44,7 @@ public class Book {
     @JsonIgnore
     @JoinColumn(name="user_id")
     private User user;
+
 
 
 }

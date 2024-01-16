@@ -9,7 +9,6 @@ public enum GeneralResponseEnum {
     UPDATED("00x","UPDATED","Updated successfully"),
     FAILED("900","FAILED","Operation failed"),
     REGISTRATION("000","REGISTRATION SUCCESS","Please Proceed to login"),
-
     LOGIN("000","LOGIN SUCCESSFUL","Login was Successful");
 
     private final String code;
