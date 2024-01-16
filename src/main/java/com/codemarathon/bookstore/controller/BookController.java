@@ -29,7 +29,6 @@ public class BookController {
         return bookService.getAllBooks();
     }
 
-
     @DeleteMapping("/delete-book/{book_id}")
     public void deleteProduct(@PathVariable("book_id")Long bookId) {
         bookService.deleteProduct(bookId);
