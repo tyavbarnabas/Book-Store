@@ -4,6 +4,8 @@ The Book-store API provides us with opporturnty to create and store different bo
 Base URL
 The base URLs for all API endpoints is: 
 http://localhost:9090/api/v1/book
+
+
 http://localhost:9090/api/v1/users
 
 
