@@ -18,3 +18,9 @@ Spring:
         dialect: org.hibernate.dialect.PostgreSQLDialect
         format_sql: true
     show-sql: true
+
+book:
+  store:
+    jwt:
+      secret:
+        key: 7658782b3865526b50686c37736d3350596244624a584a6c3574503277656a2b32442f71674f4a725336773d

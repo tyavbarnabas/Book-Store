@@ -3,7 +3,6 @@ package com.codemarathon.bookstore;
 import com.codemarathon.bookstore.dto.ApiResponse;
 import com.codemarathon.bookstore.dto.BookRequest;
 import com.codemarathon.bookstore.exception.BooKAlreadyExistException;
-import com.codemarathon.bookstore.exception.BookNotFoundException;
 import com.codemarathon.bookstore.model.Book;
 import com.codemarathon.bookstore.repository.BookRepository;
 import com.codemarathon.bookstore.serviceImpl.BookServiceImpl;
@@ -16,9 +15,6 @@ import org.mockito.MockitoAnnotations;
 import org.springframework.boot.test.context.SpringBootTest;
 
 import java.time.LocalDateTime;
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
 import java.util.Optional;
 
 import static org.hibernate.validator.internal.util.Contracts.assertNotNull;
